@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FFT_WRAPPER.srcs/sources_1/new/FFT_WRAPPER.v" \
+"../../../../fft32_butterfly.v" \
+"../../../../fft32_complex_mult.v" \
+"../../../../fft32_control_unit.v" \
+"../../../../fft32_mac_unit.v" \
+"../../../../fft32_mux5x1.v" \
+"../../../../fft32_mux_selection.v" \
+"../../../../fft32_register_bank.v" \
+"../../../../fft32_top.v" \
+"../../../../fft32_w_imag_rom.v" \
+"../../../../fft32_w_mux_selection.v" \
+"../../../../fft32_w_real_rom.v" \
+
+sv xil_defaultlib  \
+"../../../../fft32_round_and_sat.sv" \
+
+verilog xil_defaultlib  \
+"../../../../FFT_WRAPPER.srcs/sim_1/new/fft_wrapper_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

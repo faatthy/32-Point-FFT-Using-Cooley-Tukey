@@ -1,0 +1,28 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado_install/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8c5edb117657405c93277593ade439d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fft_wrapper_tb_behav xil_defaultlib.fft_wrapper_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Register(DATA_WIDTH=8)
+Compiling module xil_defaultlib.ROM_W_Real(DATA_WIDTH=8)
+Compiling module xil_defaultlib.ROM_W_Imag(DATA_WIDTH=8)
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.MUX5x1(DATA_WIDTH=8)
+Compiling module xil_defaultlib.W_SELECT_STAGE(DATA_WIDTH=8)
+Compiling module xil_defaultlib.Register(DATA_WIDTH=13)
+Compiling module xil_defaultlib.MUX5x1(DATA_WIDTH=13)
+Compiling module xil_defaultlib.SELECT_STAGE(DATA_WIDTH=13)
+Compiling module xil_defaultlib.complex_mult(inWordWidth_1=13,in...
+Compiling module xil_defaultlib.round_and_sat(I1=16,F1=6,I2=12,F...
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.Butterfly(inWordWidth_1=13,inWor...
+Compiling module xil_defaultlib.FFT_TOP
+Compiling module xil_defaultlib.FFT_WRAPPER
+Compiling module xil_defaultlib.fft_wrapper_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fft_wrapper_tb_behav

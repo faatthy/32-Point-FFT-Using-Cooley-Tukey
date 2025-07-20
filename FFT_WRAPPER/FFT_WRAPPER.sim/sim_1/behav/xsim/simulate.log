@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Time=0 | valid=0 | data_out=0
+Time=174000 | valid=1 | data_out=1
+Time=302000 | valid=1 | data_out=0
+Time=426000 | valid=0 | data_out=0
+$finish called at time : 650 ns : File "F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/sim_1/new/fft_wrapper_tb.v" Line 59

@@ -1,0 +1,2019 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date              : Sun Jul 20 19:12:54 2025
+| Host              : DESKTOP-0NF6N2J running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -max_paths 10 -file FFT_WRAPPER_timing_summary_routed.rpt -pb FFT_WRAPPER_timing_summary_routed.pb -rpx FFT_WRAPPER_timing_summary_routed.rpx -warn_on_violation
+| Design            : FFT_WRAPPER
+| Device            : xczu7ev-ffvc1156
+| Speed File        : -2  PRODUCTION 1.25 05-09-2019
+| Temperature Grade : E
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.334        0.000                      0                 3660        0.018        0.000                      0                 3660        4.725        0.000                       0                  2244  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 1.334        0.000                      0                 3660        0.018        0.000                      0                 3660        4.725        0.000                       0                  2244  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.334ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.018ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.725ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.334ns  (required time - arrival time)
+  Source:                 valid_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            valid
+                            (output port clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        4.211ns  (logic 1.077ns (25.577%)  route 3.134ns (74.423%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           2.000ns
+  Clock Path Skew:        -2.419ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.419ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.538ns (routing 0.684ns, distribution 0.854ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.538     2.419    clk_IBUF_BUFG
+    SLICE_X81Y25         FDCE                                         r  valid_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X81Y25         FDCE (Prop_AFF_SLICEM_C_Q)
+                                                      0.077     2.496 r  valid_reg/Q
+                         net (fo=2, routed)           3.134     5.630    valid_OBUF
+    AP8                  OBUF (Prop_OUTBUF_HPIOB_SNGL_I_O)
+                                                      1.000     6.630 r  valid_OBUF_inst/O
+                         net (fo=0)                   0.000     6.630    valid
+    AP8                                                               r  valid (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -2.000     7.965    
+  -------------------------------------------------------------------
+                         required time                          7.965    
+                         arrival time                          -6.630    
+  -------------------------------------------------------------------
+                         slack                                  1.334    
+
+Slack (MET) :             1.904ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_outputs_imag/out10_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        8.010ns  (logic 3.516ns (43.895%)  route 4.494ns (56.105%))
+  Logic Levels:           19  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=2 LUT3=3)
+  Clock Path Skew:        -0.076ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.920ns = ( 11.920 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.329ns (routing 0.621ns, distribution 0.708ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.078     2.463 f  fft_inst/CU/mux_sel_reg[0]/Q
+                         net (fo=97, routed)          0.635     3.098    fft_inst/CU/Q[0]
+    SLICE_X85Y18         LUT3 (Prop_G6LUT_SLICEL_I0_O)
+                                                      0.089     3.187 f  fft_inst/CU/k3_i_16__7/O
+                         net (fo=140, routed)         0.690     3.877    fft_inst/register_mux_imag_in/DSP_A_B_DATA_INST_0
+    SLICE_X94Y21         LUT3 (Prop_H6LUT_SLICEM_I1_O)
+                                                      0.090     3.967 r  fft_inst/register_mux_imag_in/k3_i_2__4/O
+                         net (fo=2, routed)           0.490     4.457    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/A[11]
+    DSP48E2_X10Y5        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[11]_A2_DATA[11])
+                                                      0.192     4.649 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_A_B_DATA_INST/A2_DATA[11]
+                         net (fo=1, routed)           0.000     4.649    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_A_B_DATA.A2_DATA<11>
+    DSP48E2_X10Y5        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[11]_PREADD_AB[11])
+                                                      0.124     4.773 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/PREADD_AB[11]
+                         net (fo=1, routed)           0.000     4.773    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA.PREADD_AB<11>
+    DSP48E2_X10Y5        DSP_PREADD (Prop_DSP_PREADD_DSP48E2_PREADD_AB[11]_AD[11])
+                                                      0.488     5.261 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_INST/AD[11]
+                         net (fo=1, routed)           0.000     5.261    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD.AD<11>
+    DSP48E2_X10Y5        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[11]_AD_DATA[11])
+                                                      0.050     5.311 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/AD_DATA[11]
+                         net (fo=1, routed)           0.000     5.311    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA.AD_DATA<11>
+    DSP48E2_X10Y5        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[11]_U[12])
+                                                      0.612     5.923 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_MULTIPLIER_INST/U[12]
+                         net (fo=1, routed)           0.000     5.923    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_MULTIPLIER.U<12>
+    DSP48E2_X10Y5        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[12]_U_DATA[12])
+                                                      0.047     5.970 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_M_DATA_INST/U_DATA[12]
+                         net (fo=1, routed)           0.000     5.970    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_M_DATA.U_DATA<12>
+    DSP48E2_X10Y5        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[12]_ALU_OUT[12])
+                                                      0.585     6.555 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_ALU_INST/ALU_OUT[12]
+                         net (fo=1, routed)           0.000     6.555    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_ALU.ALU_OUT<12>
+    DSP48E2_X10Y5        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[12]_P[12])
+                                                      0.109     6.664 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_OUTPUT_INST/P[12]
+                         net (fo=4, routed)           0.219     6.883    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1_n_93
+    SLICE_X85Y11         LUT2 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.123     7.006 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_i_4__8/O
+                         net (fo=1, routed)           0.007     7.013    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_i_4__8_n_0
+    SLICE_X85Y11         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     7.166 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     7.192    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_n_0
+    SLICE_X85Y12         CARRY8 (Prop_CARRY8_SLICEL_CI_O[3])
+                                                      0.082     7.274 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__1/O[3]
+                         net (fo=6, routed)           0.519     7.793    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__1_i_6__8_1[2]
+    SLICE_X84Y26         LUT2 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.090     7.883 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/data_out3_carry__0_i_7__39/O
+                         net (fo=1, routed)           0.015     7.898    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__0_0[7]
+    SLICE_X84Y26         CARRY8 (Prop_CARRY8_SLICEM_S[7]_CO[7])
+                                                      0.117     8.015 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     8.041    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X84Y27         CARRY8 (Prop_CARRY8_SLICEM_CI_O[0])
+                                                      0.056     8.097 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__1/O[0]
+                         net (fo=1, routed)           0.474     8.571    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/out_add_a_img[21]
+    SLICE_X84Y30         CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[3])
+                                                      0.184     8.755 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__1/CO[3]
+                         net (fo=14, routed)          0.441     9.196    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__1_n_4
+    SLICE_X88Y32         CARRY8 (Prop_CARRY8_SLICEM_S[3]_CO[5])
+                                                      0.146     9.342 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out1__5_carry/CO[5]
+                         net (fo=13, routed)          0.553     9.895    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out1__5_carry_n_2
+    SLICE_X83Y28         LUT3 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.101     9.996 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/out19[2]_i_1/O
+                         net (fo=2, routed)           0.399    10.395    fft_inst/register_outputs_imag/in10[2]
+    SLICE_X84Y27         FDCE                                         r  fft_inst/register_outputs_imag/out10_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.329    11.920    fft_inst/register_outputs_imag/clk_IBUF_BUFG
+    SLICE_X84Y27         FDCE                                         r  fft_inst/register_outputs_imag/out10_reg[2]/C
+                         clock pessimism              0.390    12.310    
+                         clock uncertainty           -0.035    12.274    
+    SLICE_X84Y27         FDCE (Setup_AFF2_SLICEM_C_D)
+                                                      0.025    12.299    fft_inst/register_outputs_imag/out10_reg[2]
+  -------------------------------------------------------------------
+                         required time                         12.299    
+                         arrival time                         -10.395    
+  -------------------------------------------------------------------
+                         slack                                  1.904    
+
+Slack (MET) :             1.932ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[2]_rep__2/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_outputs_imag/out6_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.978ns  (logic 3.674ns (46.052%)  route 4.304ns (53.948%))
+  Logic Levels:           19  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=4 LUT3=1)
+  Clock Path Skew:        -0.080ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.916ns = ( 11.916 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.325ns (routing 0.621ns, distribution 0.704ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[2]_rep__2/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_FFF2_SLICEM_C_Q)
+                                                      0.079     2.464 f  fft_inst/CU/mux_sel_reg[2]_rep__2/Q
+                         net (fo=92, routed)          1.243     3.707    fft_inst/CU/mux_sel_reg[2]_rep__2_n_0
+    SLICE_X77Y0          LUT2 (Prop_H5LUT_SLICEL_I1_O)
+                                                      0.065     3.772 r  fft_inst/CU/k3_i_16__2/O
+                         net (fo=16, routed)          0.763     4.535    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/A[3]
+    DSP48E2_X11Y7        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[3]_A2_DATA[3])
+                                                      0.192     4.727 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA_INST/A2_DATA[3]
+                         net (fo=1, routed)           0.000     4.727    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA.A2_DATA<3>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[3]_PREADD_AB[3])
+                                                      0.124     4.851 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/PREADD_AB[3]
+                         net (fo=1, routed)           0.000     4.851    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.PREADD_AB<3>
+    DSP48E2_X11Y7        DSP_PREADD (Prop_DSP_PREADD_DSP48E2_PREADD_AB[3]_AD[4])
+                                                      0.488     5.339 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_INST/AD[4]
+                         net (fo=1, routed)           0.000     5.339    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD.AD<4>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[4]_AD_DATA[4])
+                                                      0.050     5.389 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/AD_DATA[4]
+                         net (fo=1, routed)           0.000     5.389    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.AD_DATA<4>
+    DSP48E2_X11Y7        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[4]_U[5])
+                                                      0.612     6.001 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER_INST/U[5]
+                         net (fo=1, routed)           0.000     6.001    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER.U<5>
+    DSP48E2_X11Y7        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[5]_U_DATA[5])
+                                                      0.047     6.048 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA_INST/U_DATA[5]
+                         net (fo=1, routed)           0.000     6.048    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA.U_DATA<5>
+    DSP48E2_X11Y7        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[5]_ALU_OUT[5])
+                                                      0.585     6.633 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU_INST/ALU_OUT[5]
+                         net (fo=1, routed)           0.000     6.633    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU.ALU_OUT<5>
+    DSP48E2_X11Y7        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[5]_P[5])
+                                                      0.109     6.742 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_OUTPUT_INST/P[5]
+                         net (fo=1, routed)           0.253     6.995    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2_n_100
+    SLICE_X88Y15         LUT2 (Prop_F6LUT_SLICEM_I1_O)
+                                                      0.123     7.118 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4/O
+                         net (fo=1, routed)           0.022     7.140    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4_n_0
+    SLICE_X88Y15         CARRY8 (Prop_CARRY8_SLICEM_S[5]_CO[7])
+                                                      0.159     7.299 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry/CO[7]
+                         net (fo=1, routed)           0.026     7.325    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_n_0
+    SLICE_X88Y16         CARRY8 (Prop_CARRY8_SLICEM_CI_O[5])
+                                                      0.116     7.441 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry__0/O[5]
+                         net (fo=2, routed)           0.477     7.918    fft_inst/register_mux_imag_in/data_out3_carry__1_2[7]
+    SLICE_X91Y29         LUT2 (Prop_A6LUT_SLICEL_I1_O)
+                                                      0.149     8.067 r  fft_inst/register_mux_imag_in/data_out3_carry__0_i_14__8/O
+                         net (fo=1, routed)           0.009     8.076    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__0_0[0]
+    SLICE_X91Y29         CARRY8 (Prop_CARRY8_SLICEL_S[0]_CO[7])
+                                                      0.190     8.266 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.052     8.318    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X91Y30         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     8.374 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__1/O[0]
+                         net (fo=1, routed)           0.435     8.809    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out_add_a_img[21]
+    SLICE_X92Y30         CARRY8 (Prop_CARRY8_SLICEL_S[1]_O[2])
+                                                      0.114     8.923 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1/O[2]
+                         net (fo=4, routed)           0.189     9.112    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1_n_13
+    SLICE_X92Y31         LUT2 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.123     9.235 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry_i_7__20/O
+                         net (fo=1, routed)           0.010     9.245    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry_i_7__20_n_0
+    SLICE_X92Y31         CARRY8 (Prop_CARRY8_SLICEL_S[2]_CO[5])
+                                                      0.158     9.403 f  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry/CO[5]
+                         net (fo=13, routed)          0.320     9.723    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry_n_2
+    SLICE_X90Y29         LUT3 (Prop_G5LUT_SLICEL_I1_O)
+                                                      0.135     9.858 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out11[7]_i_1/O
+                         net (fo=2, routed)           0.505    10.363    fft_inst/register_outputs_imag/in6[7]
+    SLICE_X88Y34         FDCE                                         r  fft_inst/register_outputs_imag/out6_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.325    11.916    fft_inst/register_outputs_imag/clk_IBUF_BUFG
+    SLICE_X88Y34         FDCE                                         r  fft_inst/register_outputs_imag/out6_reg[7]/C
+                         clock pessimism              0.390    12.306    
+                         clock uncertainty           -0.035    12.271    
+    SLICE_X88Y34         FDCE (Setup_GFF_SLICEM_C_D)
+                                                      0.025    12.296    fft_inst/register_outputs_imag/out6_reg[7]
+  -------------------------------------------------------------------
+                         required time                         12.296    
+                         arrival time                         -10.363    
+  -------------------------------------------------------------------
+                         slack                                  1.932    
+
+Slack (MET) :             1.963ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_mux_imag_in/out19_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.950ns  (logic 3.524ns (44.327%)  route 4.426ns (55.673%))
+  Logic Levels:           19  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=2 LUT3=3)
+  Clock Path Skew:        -0.077ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.919ns = ( 11.919 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.328ns (routing 0.621ns, distribution 0.707ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.078     2.463 f  fft_inst/CU/mux_sel_reg[0]/Q
+                         net (fo=97, routed)          0.635     3.098    fft_inst/CU/Q[0]
+    SLICE_X85Y18         LUT3 (Prop_G6LUT_SLICEL_I0_O)
+                                                      0.089     3.187 f  fft_inst/CU/k3_i_16__7/O
+                         net (fo=140, routed)         0.690     3.877    fft_inst/register_mux_imag_in/DSP_A_B_DATA_INST_0
+    SLICE_X94Y21         LUT3 (Prop_H6LUT_SLICEM_I1_O)
+                                                      0.090     3.967 r  fft_inst/register_mux_imag_in/k3_i_2__4/O
+                         net (fo=2, routed)           0.490     4.457    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/A[11]
+    DSP48E2_X10Y5        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[11]_A2_DATA[11])
+                                                      0.192     4.649 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_A_B_DATA_INST/A2_DATA[11]
+                         net (fo=1, routed)           0.000     4.649    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_A_B_DATA.A2_DATA<11>
+    DSP48E2_X10Y5        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[11]_PREADD_AB[11])
+                                                      0.124     4.773 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/PREADD_AB[11]
+                         net (fo=1, routed)           0.000     4.773    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA.PREADD_AB<11>
+    DSP48E2_X10Y5        DSP_PREADD (Prop_DSP_PREADD_DSP48E2_PREADD_AB[11]_AD[11])
+                                                      0.488     5.261 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_INST/AD[11]
+                         net (fo=1, routed)           0.000     5.261    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD.AD<11>
+    DSP48E2_X10Y5        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[11]_AD_DATA[11])
+                                                      0.050     5.311 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/AD_DATA[11]
+                         net (fo=1, routed)           0.000     5.311    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA.AD_DATA<11>
+    DSP48E2_X10Y5        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[11]_U[12])
+                                                      0.612     5.923 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_MULTIPLIER_INST/U[12]
+                         net (fo=1, routed)           0.000     5.923    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_MULTIPLIER.U<12>
+    DSP48E2_X10Y5        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[12]_U_DATA[12])
+                                                      0.047     5.970 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_M_DATA_INST/U_DATA[12]
+                         net (fo=1, routed)           0.000     5.970    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_M_DATA.U_DATA<12>
+    DSP48E2_X10Y5        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[12]_ALU_OUT[12])
+                                                      0.585     6.555 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_ALU_INST/ALU_OUT[12]
+                         net (fo=1, routed)           0.000     6.555    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_ALU.ALU_OUT<12>
+    DSP48E2_X10Y5        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[12]_P[12])
+                                                      0.109     6.664 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_OUTPUT_INST/P[12]
+                         net (fo=4, routed)           0.219     6.883    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1_n_93
+    SLICE_X85Y11         LUT2 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.123     7.006 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_i_4__8/O
+                         net (fo=1, routed)           0.007     7.013    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_i_4__8_n_0
+    SLICE_X85Y11         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     7.166 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     7.192    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_n_0
+    SLICE_X85Y12         CARRY8 (Prop_CARRY8_SLICEL_CI_O[3])
+                                                      0.082     7.274 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__1/O[3]
+                         net (fo=6, routed)           0.519     7.793    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__1_i_6__8_1[2]
+    SLICE_X84Y26         LUT2 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.090     7.883 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/data_out3_carry__0_i_7__39/O
+                         net (fo=1, routed)           0.015     7.898    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__0_0[7]
+    SLICE_X84Y26         CARRY8 (Prop_CARRY8_SLICEM_S[7]_CO[7])
+                                                      0.117     8.015 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     8.041    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X84Y27         CARRY8 (Prop_CARRY8_SLICEM_CI_O[0])
+                                                      0.056     8.097 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__1/O[0]
+                         net (fo=1, routed)           0.474     8.571    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/out_add_a_img[21]
+    SLICE_X84Y30         CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[3])
+                                                      0.184     8.755 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__1/CO[3]
+                         net (fo=14, routed)          0.441     9.196    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__1_n_4
+    SLICE_X88Y32         CARRY8 (Prop_CARRY8_SLICEM_S[3]_CO[5])
+                                                      0.146     9.342 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out1__5_carry/CO[5]
+                         net (fo=13, routed)          0.553     9.895    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out1__5_carry_n_2
+    SLICE_X83Y28         LUT3 (Prop_H5LUT_SLICEM_I0_O)
+                                                      0.109    10.004 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/out19[3]_i_1/O
+                         net (fo=2, routed)           0.331    10.335    fft_inst/register_mux_imag_in/out19_reg[12]_1[3]
+    SLICE_X84Y27         FDCE                                         r  fft_inst/register_mux_imag_in/out19_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.328    11.919    fft_inst/register_mux_imag_in/clk_IBUF_BUFG
+    SLICE_X84Y27         FDCE                                         r  fft_inst/register_mux_imag_in/out19_reg[3]/C
+                         clock pessimism              0.390    12.309    
+                         clock uncertainty           -0.035    12.274    
+    SLICE_X84Y27         FDCE (Setup_FFF_SLICEM_C_D)
+                                                      0.025    12.299    fft_inst/register_mux_imag_in/out19_reg[3]
+  -------------------------------------------------------------------
+                         required time                         12.299    
+                         arrival time                         -10.335    
+  -------------------------------------------------------------------
+                         slack                                  1.963    
+
+Slack (MET) :             1.979ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[2]_rep__2/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_mux_imag_in/out11_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.932ns  (logic 3.662ns (46.167%)  route 4.270ns (53.833%))
+  Logic Levels:           19  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=4 LUT3=1)
+  Clock Path Skew:        -0.079ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.917ns = ( 11.917 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.326ns (routing 0.621ns, distribution 0.705ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[2]_rep__2/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_FFF2_SLICEM_C_Q)
+                                                      0.079     2.464 f  fft_inst/CU/mux_sel_reg[2]_rep__2/Q
+                         net (fo=92, routed)          1.243     3.707    fft_inst/CU/mux_sel_reg[2]_rep__2_n_0
+    SLICE_X77Y0          LUT2 (Prop_H5LUT_SLICEL_I1_O)
+                                                      0.065     3.772 r  fft_inst/CU/k3_i_16__2/O
+                         net (fo=16, routed)          0.763     4.535    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/A[3]
+    DSP48E2_X11Y7        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[3]_A2_DATA[3])
+                                                      0.192     4.727 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA_INST/A2_DATA[3]
+                         net (fo=1, routed)           0.000     4.727    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA.A2_DATA<3>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[3]_PREADD_AB[3])
+                                                      0.124     4.851 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/PREADD_AB[3]
+                         net (fo=1, routed)           0.000     4.851    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.PREADD_AB<3>
+    DSP48E2_X11Y7        DSP_PREADD (Prop_DSP_PREADD_DSP48E2_PREADD_AB[3]_AD[4])
+                                                      0.488     5.339 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_INST/AD[4]
+                         net (fo=1, routed)           0.000     5.339    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD.AD<4>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[4]_AD_DATA[4])
+                                                      0.050     5.389 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/AD_DATA[4]
+                         net (fo=1, routed)           0.000     5.389    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.AD_DATA<4>
+    DSP48E2_X11Y7        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[4]_U[5])
+                                                      0.612     6.001 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER_INST/U[5]
+                         net (fo=1, routed)           0.000     6.001    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER.U<5>
+    DSP48E2_X11Y7        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[5]_U_DATA[5])
+                                                      0.047     6.048 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA_INST/U_DATA[5]
+                         net (fo=1, routed)           0.000     6.048    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA.U_DATA<5>
+    DSP48E2_X11Y7        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[5]_ALU_OUT[5])
+                                                      0.585     6.633 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU_INST/ALU_OUT[5]
+                         net (fo=1, routed)           0.000     6.633    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU.ALU_OUT<5>
+    DSP48E2_X11Y7        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[5]_P[5])
+                                                      0.109     6.742 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_OUTPUT_INST/P[5]
+                         net (fo=1, routed)           0.253     6.995    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2_n_100
+    SLICE_X88Y15         LUT2 (Prop_F6LUT_SLICEM_I1_O)
+                                                      0.123     7.118 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4/O
+                         net (fo=1, routed)           0.022     7.140    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4_n_0
+    SLICE_X88Y15         CARRY8 (Prop_CARRY8_SLICEM_S[5]_CO[7])
+                                                      0.159     7.299 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry/CO[7]
+                         net (fo=1, routed)           0.026     7.325    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_n_0
+    SLICE_X88Y16         CARRY8 (Prop_CARRY8_SLICEM_CI_O[5])
+                                                      0.116     7.441 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry__0/O[5]
+                         net (fo=2, routed)           0.477     7.918    fft_inst/register_mux_imag_in/data_out3_carry__1_2[7]
+    SLICE_X91Y29         LUT2 (Prop_A6LUT_SLICEL_I1_O)
+                                                      0.149     8.067 r  fft_inst/register_mux_imag_in/data_out3_carry__0_i_14__8/O
+                         net (fo=1, routed)           0.009     8.076    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__0_0[0]
+    SLICE_X91Y29         CARRY8 (Prop_CARRY8_SLICEL_S[0]_CO[7])
+                                                      0.190     8.266 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.052     8.318    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X91Y30         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     8.374 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__1/O[0]
+                         net (fo=1, routed)           0.435     8.809    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out_add_a_img[21]
+    SLICE_X92Y30         CARRY8 (Prop_CARRY8_SLICEL_S[1]_O[2])
+                                                      0.114     8.923 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1/O[2]
+                         net (fo=4, routed)           0.189     9.112    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1_n_13
+    SLICE_X92Y31         LUT2 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.123     9.235 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry_i_7__20/O
+                         net (fo=1, routed)           0.010     9.245    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry_i_7__20_n_0
+    SLICE_X92Y31         CARRY8 (Prop_CARRY8_SLICEL_S[2]_CO[5])
+                                                      0.158     9.403 f  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry/CO[5]
+                         net (fo=13, routed)          0.320     9.723    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1_carry_n_2
+    SLICE_X90Y29         LUT3 (Prop_G6LUT_SLICEL_I1_O)
+                                                      0.123     9.846 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out11[6]_i_1/O
+                         net (fo=2, routed)           0.471    10.317    fft_inst/register_mux_imag_in/out11_reg[12]_0[6]
+    SLICE_X88Y34         FDCE                                         r  fft_inst/register_mux_imag_in/out11_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.326    11.917    fft_inst/register_mux_imag_in/clk_IBUF_BUFG
+    SLICE_X88Y34         FDCE                                         r  fft_inst/register_mux_imag_in/out11_reg[6]/C
+                         clock pessimism              0.390    12.307    
+                         clock uncertainty           -0.035    12.272    
+    SLICE_X88Y34         FDCE (Setup_DFF_SLICEM_C_D)
+                                                      0.025    12.297    fft_inst/register_mux_imag_in/out11_reg[6]
+  -------------------------------------------------------------------
+                         required time                         12.297    
+                         arrival time                         -10.317    
+  -------------------------------------------------------------------
+                         slack                                  1.979    
+
+Slack (MET) :             1.979ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[2]_rep__2/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_mux_imag_in/out11_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.919ns  (logic 3.524ns (44.501%)  route 4.395ns (55.499%))
+  Logic Levels:           18  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=3 LUT3=1)
+  Clock Path Skew:        -0.091ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.904ns = ( 11.904 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.313ns (routing 0.621ns, distribution 0.692ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[2]_rep__2/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_FFF2_SLICEM_C_Q)
+                                                      0.079     2.464 f  fft_inst/CU/mux_sel_reg[2]_rep__2/Q
+                         net (fo=92, routed)          1.243     3.707    fft_inst/CU/mux_sel_reg[2]_rep__2_n_0
+    SLICE_X77Y0          LUT2 (Prop_H5LUT_SLICEL_I1_O)
+                                                      0.065     3.772 r  fft_inst/CU/k3_i_16__2/O
+                         net (fo=16, routed)          0.763     4.535    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/A[3]
+    DSP48E2_X11Y7        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[3]_A2_DATA[3])
+                                                      0.192     4.727 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA_INST/A2_DATA[3]
+                         net (fo=1, routed)           0.000     4.727    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA.A2_DATA<3>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[3]_PREADD_AB[3])
+                                                      0.124     4.851 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/PREADD_AB[3]
+                         net (fo=1, routed)           0.000     4.851    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.PREADD_AB<3>
+    DSP48E2_X11Y7        DSP_PREADD (Prop_DSP_PREADD_DSP48E2_PREADD_AB[3]_AD[4])
+                                                      0.488     5.339 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_INST/AD[4]
+                         net (fo=1, routed)           0.000     5.339    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD.AD<4>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[4]_AD_DATA[4])
+                                                      0.050     5.389 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/AD_DATA[4]
+                         net (fo=1, routed)           0.000     5.389    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.AD_DATA<4>
+    DSP48E2_X11Y7        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[4]_U[5])
+                                                      0.612     6.001 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER_INST/U[5]
+                         net (fo=1, routed)           0.000     6.001    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER.U<5>
+    DSP48E2_X11Y7        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[5]_U_DATA[5])
+                                                      0.047     6.048 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA_INST/U_DATA[5]
+                         net (fo=1, routed)           0.000     6.048    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA.U_DATA<5>
+    DSP48E2_X11Y7        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[5]_ALU_OUT[5])
+                                                      0.585     6.633 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU_INST/ALU_OUT[5]
+                         net (fo=1, routed)           0.000     6.633    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU.ALU_OUT<5>
+    DSP48E2_X11Y7        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[5]_P[5])
+                                                      0.109     6.742 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_OUTPUT_INST/P[5]
+                         net (fo=1, routed)           0.253     6.995    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2_n_100
+    SLICE_X88Y15         LUT2 (Prop_F6LUT_SLICEM_I1_O)
+                                                      0.123     7.118 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4/O
+                         net (fo=1, routed)           0.022     7.140    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4_n_0
+    SLICE_X88Y15         CARRY8 (Prop_CARRY8_SLICEM_S[5]_CO[7])
+                                                      0.159     7.299 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry/CO[7]
+                         net (fo=1, routed)           0.026     7.325    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_n_0
+    SLICE_X88Y16         CARRY8 (Prop_CARRY8_SLICEM_CI_O[5])
+                                                      0.116     7.441 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry__0/O[5]
+                         net (fo=2, routed)           0.477     7.918    fft_inst/register_mux_imag_in/data_out3_carry__1_2[7]
+    SLICE_X91Y29         LUT2 (Prop_A6LUT_SLICEL_I1_O)
+                                                      0.149     8.067 r  fft_inst/register_mux_imag_in/data_out3_carry__0_i_14__8/O
+                         net (fo=1, routed)           0.009     8.076    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__0_0[0]
+    SLICE_X91Y29         CARRY8 (Prop_CARRY8_SLICEL_S[0]_CO[7])
+                                                      0.190     8.266 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.052     8.318    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X91Y30         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     8.374 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__1/O[0]
+                         net (fo=1, routed)           0.435     8.809    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out_add_a_img[21]
+    SLICE_X92Y30         CARRY8 (Prop_CARRY8_SLICEL_S[1]_CO[3])
+                                                      0.180     8.989 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1/CO[3]
+                         net (fo=14, routed)          0.378     9.367    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1_n_4
+    SLICE_X91Y31         CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[5])
+                                                      0.101     9.468 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1__5_carry/CO[5]
+                         net (fo=13, routed)          0.263     9.731    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1__5_carry_n_2
+    SLICE_X93Y29         LUT3 (Prop_C5LUT_SLICEM_I0_O)
+                                                      0.099     9.830 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out11[5]_i_1/O
+                         net (fo=2, routed)           0.474    10.304    fft_inst/register_mux_imag_in/out11_reg[12]_0[5]
+    SLICE_X87Y30         FDCE                                         r  fft_inst/register_mux_imag_in/out11_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.313    11.904    fft_inst/register_mux_imag_in/clk_IBUF_BUFG
+    SLICE_X87Y30         FDCE                                         r  fft_inst/register_mux_imag_in/out11_reg[5]/C
+                         clock pessimism              0.390    12.294    
+                         clock uncertainty           -0.035    12.259    
+    SLICE_X87Y30         FDCE (Setup_HFF2_SLICEL_C_D)
+                                                      0.025    12.284    fft_inst/register_mux_imag_in/out11_reg[5]
+  -------------------------------------------------------------------
+                         required time                         12.284    
+                         arrival time                         -10.304    
+  -------------------------------------------------------------------
+                         slack                                  1.979    
+
+Slack (MET) :             1.981ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_mux_imag_in/out19_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.922ns  (logic 3.578ns (45.165%)  route 4.344ns (54.835%))
+  Logic Levels:           19  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=2 LUT3=3)
+  Clock Path Skew:        -0.086ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.909ns = ( 11.909 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.318ns (routing 0.621ns, distribution 0.697ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.078     2.463 f  fft_inst/CU/mux_sel_reg[0]/Q
+                         net (fo=97, routed)          0.635     3.098    fft_inst/CU/Q[0]
+    SLICE_X85Y18         LUT3 (Prop_G6LUT_SLICEL_I0_O)
+                                                      0.089     3.187 f  fft_inst/CU/k3_i_16__7/O
+                         net (fo=140, routed)         0.690     3.877    fft_inst/register_mux_imag_in/DSP_A_B_DATA_INST_0
+    SLICE_X94Y21         LUT3 (Prop_H6LUT_SLICEM_I1_O)
+                                                      0.090     3.967 r  fft_inst/register_mux_imag_in/k3_i_2__4/O
+                         net (fo=2, routed)           0.490     4.457    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/A[11]
+    DSP48E2_X10Y5        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[11]_A2_DATA[11])
+                                                      0.192     4.649 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_A_B_DATA_INST/A2_DATA[11]
+                         net (fo=1, routed)           0.000     4.649    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_A_B_DATA.A2_DATA<11>
+    DSP48E2_X10Y5        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[11]_PREADD_AB[11])
+                                                      0.124     4.773 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/PREADD_AB[11]
+                         net (fo=1, routed)           0.000     4.773    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA.PREADD_AB<11>
+    DSP48E2_X10Y5        DSP_PREADD (Prop_DSP_PREADD_DSP48E2_PREADD_AB[11]_AD[11])
+                                                      0.488     5.261 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_INST/AD[11]
+                         net (fo=1, routed)           0.000     5.261    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD.AD<11>
+    DSP48E2_X10Y5        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[11]_AD_DATA[11])
+                                                      0.050     5.311 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/AD_DATA[11]
+                         net (fo=1, routed)           0.000     5.311    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_PREADD_DATA.AD_DATA<11>
+    DSP48E2_X10Y5        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[11]_U[12])
+                                                      0.612     5.923 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_MULTIPLIER_INST/U[12]
+                         net (fo=1, routed)           0.000     5.923    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_MULTIPLIER.U<12>
+    DSP48E2_X10Y5        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[12]_U_DATA[12])
+                                                      0.047     5.970 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_M_DATA_INST/U_DATA[12]
+                         net (fo=1, routed)           0.000     5.970    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_M_DATA.U_DATA<12>
+    DSP48E2_X10Y5        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[12]_ALU_OUT[12])
+                                                      0.585     6.555 f  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_ALU_INST/ALU_OUT[12]
+                         net (fo=1, routed)           0.000     6.555    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_ALU.ALU_OUT<12>
+    DSP48E2_X10Y5        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[12]_P[12])
+                                                      0.109     6.664 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1/DSP_OUTPUT_INST/P[12]
+                         net (fo=4, routed)           0.219     6.883    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1_n_93
+    SLICE_X85Y11         LUT2 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.123     7.006 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_i_4__8/O
+                         net (fo=1, routed)           0.007     7.013    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_i_4__8_n_0
+    SLICE_X85Y11         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     7.166 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     7.192    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__0_n_0
+    SLICE_X85Y12         CARRY8 (Prop_CARRY8_SLICEL_CI_O[3])
+                                                      0.082     7.274 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__1/O[3]
+                         net (fo=6, routed)           0.519     7.793    fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/out_imag_carry__1_i_6__8_1[2]
+    SLICE_X84Y26         LUT2 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.090     7.883 r  fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/data_out3_carry__0_i_7__39/O
+                         net (fo=1, routed)           0.015     7.898    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__0_0[7]
+    SLICE_X84Y26         CARRY8 (Prop_CARRY8_SLICEM_S[7]_CO[7])
+                                                      0.117     8.015 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     8.041    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X84Y27         CARRY8 (Prop_CARRY8_SLICEM_CI_O[0])
+                                                      0.056     8.097 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3_carry__1/O[0]
+                         net (fo=1, routed)           0.474     8.571    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/out_add_a_img[21]
+    SLICE_X84Y30         CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[3])
+                                                      0.184     8.755 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__1/CO[3]
+                         net (fo=14, routed)          0.441     9.196    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out3__49_carry__1_n_4
+    SLICE_X88Y32         CARRY8 (Prop_CARRY8_SLICEM_S[3]_CO[5])
+                                                      0.146     9.342 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out1__5_carry/CO[5]
+                         net (fo=13, routed)          0.488     9.830    fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/data_out1__5_carry_n_2
+    SLICE_X83Y28         LUT3 (Prop_G5LUT_SLICEM_I0_O)
+                                                      0.163     9.993 r  fft_inst/butterfly_stage/BF10/fft_img_1_round_and_sat/out19[5]_i_1/O
+                         net (fo=2, routed)           0.314    10.307    fft_inst/register_mux_imag_in/out19_reg[12]_1[5]
+    SLICE_X85Y28         FDCE                                         r  fft_inst/register_mux_imag_in/out19_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.318    11.909    fft_inst/register_mux_imag_in/clk_IBUF_BUFG
+    SLICE_X85Y28         FDCE                                         r  fft_inst/register_mux_imag_in/out19_reg[5]/C
+                         clock pessimism              0.390    12.299    
+                         clock uncertainty           -0.035    12.264    
+    SLICE_X85Y28         FDCE (Setup_HFF_SLICEL_C_D)
+                                                      0.025    12.289    fft_inst/register_mux_imag_in/out19_reg[5]
+  -------------------------------------------------------------------
+                         required time                         12.289    
+                         arrival time                         -10.307    
+  -------------------------------------------------------------------
+                         slack                                  1.981    
+
+Slack (MET) :             1.983ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_mux_real_in/out8_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.946ns  (logic 3.860ns (48.578%)  route 4.086ns (51.422%))
+  Logic Levels:           20  (CARRY8=7 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=2 LUT3=3 LUT5=1)
+  Clock Path Skew:        -0.061ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.935ns = ( 11.935 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.344ns (routing 0.621ns, distribution 0.723ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.078     2.463 r  fft_inst/CU/mux_sel_reg[0]/Q
+                         net (fo=97, routed)          0.366     2.829    fft_inst/CU/Q[0]
+    SLICE_X75Y31         LUT3 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.123     2.952 r  fft_inst/CU/k3_i_22__8/O
+                         net (fo=138, routed)         0.745     3.697    fft_inst/CU/mux_sel_reg[0]_6
+    SLICE_X86Y5          LUT3 (Prop_D5LUT_SLICEM_I0_O)
+                                                      0.158     3.855 f  fft_inst/CU/k1_i_9__7/O
+                         net (fo=2, routed)           0.563     4.418    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/D[4]
+    DSP48E2_X11Y10       DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_DIN[4]_D_DATA[4])
+                                                      0.240     4.658 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/D_DATA[4]
+                         net (fo=1, routed)           0.000     4.658    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA.D_DATA<4>
+    DSP48E2_X11Y10       DSP_PREADD (Prop_DSP_PREADD_DSP48E2_D_DATA[4]_AD[4])
+                                                      0.524     5.182 f  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_INST/AD[4]
+                         net (fo=1, routed)           0.000     5.182    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD.AD<4>
+    DSP48E2_X11Y10       DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[4]_AD_DATA[4])
+                                                      0.050     5.232 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/AD_DATA[4]
+                         net (fo=1, routed)           0.000     5.232    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA.AD_DATA<4>
+    DSP48E2_X11Y10       DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[4]_V[4])
+                                                      0.580     5.812 f  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_MULTIPLIER_INST/V[4]
+                         net (fo=1, routed)           0.000     5.812    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_MULTIPLIER.V<4>
+    DSP48E2_X11Y10       DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_V[4]_V_DATA[4])
+                                                      0.046     5.858 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_M_DATA_INST/V_DATA[4]
+                         net (fo=1, routed)           0.000     5.858    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_M_DATA.V_DATA<4>
+    DSP48E2_X11Y10       DSP_ALU (Prop_DSP_ALU_DSP48E2_V_DATA[4]_ALU_OUT[4])
+                                                      0.571     6.429 f  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_ALU_INST/ALU_OUT[4]
+                         net (fo=1, routed)           0.000     6.429    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_ALU.ALU_OUT<4>
+    DSP48E2_X11Y10       DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[4]_P[4])
+                                                      0.109     6.538 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_OUTPUT_INST/P[4]
+                         net (fo=4, routed)           0.454     6.992    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1_n_101
+    SLICE_X83Y25         LUT2 (Prop_E6LUT_SLICEM_I0_O)
+                                                      0.124     7.116 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry_i_4__2/O
+                         net (fo=1, routed)           0.014     7.130    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry_i_4__2_n_0
+    SLICE_X83Y25         CARRY8 (Prop_CARRY8_SLICEM_S[4]_CO[7])
+                                                      0.156     7.286 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry/CO[7]
+                         net (fo=1, routed)           0.026     7.312    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry_n_0
+    SLICE_X83Y26         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     7.388 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry__0/O[1]
+                         net (fo=2, routed)           0.364     7.752    fft_inst/CU/mul_real_out_12[3]
+    SLICE_X81Y17         LUT5 (Prop_A6LUT_SLICEM_I4_O)
+                                                      0.125     7.877 r  fft_inst/CU/data_out3_carry__0_i_8__59/O
+                         net (fo=1, routed)           0.013     7.890    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry_1[0]
+    SLICE_X81Y17         CARRY8 (Prop_CARRY8_SLICEM_S[0]_CO[7])
+                                                      0.192     8.082 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     8.108    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X81Y18         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     8.184 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3_carry__1/O[1]
+                         net (fo=1, routed)           0.470     8.654    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/out_sub_a_real[18]
+    SLICE_X81Y14         CARRY8 (Prop_CARRY8_SLICEM_S[6]_CO[7])
+                                                      0.117     8.771 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     8.797    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__0_n_0
+    SLICE_X81Y15         CARRY8 (Prop_CARRY8_SLICEM_CI_O[0])
+                                                      0.056     8.853 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__1/O[0]
+                         net (fo=4, routed)           0.234     9.087    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__1_n_15
+    SLICE_X83Y13         LUT2 (Prop_B6LUT_SLICEM_I0_O)
+                                                      0.125     9.212 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry_i_8__13/O
+                         net (fo=1, routed)           0.016     9.228    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry_i_8__13_n_0
+    SLICE_X83Y13         CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[5])
+                                                      0.199     9.427 f  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry/CO[5]
+                         net (fo=13, routed)          0.343     9.770    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry_n_2
+    SLICE_X79Y9          LUT3 (Prop_D5LUT_SLICEM_I1_O)
+                                                      0.135     9.905 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/out8[1]_i_1/O
+                         net (fo=2, routed)           0.426    10.331    fft_inst/register_mux_real_in/in20[1]
+    SLICE_X81Y5          FDCE                                         r  fft_inst/register_mux_real_in/out8_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.344    11.935    fft_inst/register_mux_real_in/clk_IBUF_BUFG
+    SLICE_X81Y5          FDCE                                         r  fft_inst/register_mux_real_in/out8_reg[1]/C
+                         clock pessimism              0.390    12.325    
+                         clock uncertainty           -0.035    12.289    
+    SLICE_X81Y5          FDCE (Setup_FFF2_SLICEM_C_D)
+                                                      0.025    12.314    fft_inst/register_mux_real_in/out8_reg[1]
+  -------------------------------------------------------------------
+                         required time                         12.314    
+                         arrival time                         -10.331    
+  -------------------------------------------------------------------
+                         slack                                  1.983    
+
+Slack (MET) :             1.983ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[2]_rep__2/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_mux_imag_in/out11_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.934ns  (logic 3.513ns (44.278%)  route 4.421ns (55.722%))
+  Logic Levels:           18  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=3 LUT3=1)
+  Clock Path Skew:        -0.073ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.923ns = ( 11.923 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.332ns (routing 0.621ns, distribution 0.711ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[2]_rep__2/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_FFF2_SLICEM_C_Q)
+                                                      0.079     2.464 f  fft_inst/CU/mux_sel_reg[2]_rep__2/Q
+                         net (fo=92, routed)          1.243     3.707    fft_inst/CU/mux_sel_reg[2]_rep__2_n_0
+    SLICE_X77Y0          LUT2 (Prop_H5LUT_SLICEL_I1_O)
+                                                      0.065     3.772 r  fft_inst/CU/k3_i_16__2/O
+                         net (fo=16, routed)          0.763     4.535    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/A[3]
+    DSP48E2_X11Y7        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[3]_A2_DATA[3])
+                                                      0.192     4.727 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA_INST/A2_DATA[3]
+                         net (fo=1, routed)           0.000     4.727    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_A_B_DATA.A2_DATA<3>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[3]_PREADD_AB[3])
+                                                      0.124     4.851 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/PREADD_AB[3]
+                         net (fo=1, routed)           0.000     4.851    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.PREADD_AB<3>
+    DSP48E2_X11Y7        DSP_PREADD (Prop_DSP_PREADD_DSP48E2_PREADD_AB[3]_AD[4])
+                                                      0.488     5.339 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_INST/AD[4]
+                         net (fo=1, routed)           0.000     5.339    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD.AD<4>
+    DSP48E2_X11Y7        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[4]_AD_DATA[4])
+                                                      0.050     5.389 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA_INST/AD_DATA[4]
+                         net (fo=1, routed)           0.000     5.389    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_PREADD_DATA.AD_DATA<4>
+    DSP48E2_X11Y7        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[4]_U[5])
+                                                      0.612     6.001 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER_INST/U[5]
+                         net (fo=1, routed)           0.000     6.001    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_MULTIPLIER.U<5>
+    DSP48E2_X11Y7        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[5]_U_DATA[5])
+                                                      0.047     6.048 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA_INST/U_DATA[5]
+                         net (fo=1, routed)           0.000     6.048    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_M_DATA.U_DATA<5>
+    DSP48E2_X11Y7        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[5]_ALU_OUT[5])
+                                                      0.585     6.633 f  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU_INST/ALU_OUT[5]
+                         net (fo=1, routed)           0.000     6.633    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_ALU.ALU_OUT<5>
+    DSP48E2_X11Y7        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[5]_P[5])
+                                                      0.109     6.742 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2/DSP_OUTPUT_INST/P[5]
+                         net (fo=1, routed)           0.253     6.995    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2_n_100
+    SLICE_X88Y15         LUT2 (Prop_F6LUT_SLICEM_I1_O)
+                                                      0.123     7.118 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4/O
+                         net (fo=1, routed)           0.022     7.140    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_i_3__4_n_0
+    SLICE_X88Y15         CARRY8 (Prop_CARRY8_SLICEM_S[5]_CO[7])
+                                                      0.159     7.299 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry/CO[7]
+                         net (fo=1, routed)           0.026     7.325    fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry_n_0
+    SLICE_X88Y16         CARRY8 (Prop_CARRY8_SLICEM_CI_O[5])
+                                                      0.116     7.441 r  fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/out_imag_carry__0/O[5]
+                         net (fo=2, routed)           0.477     7.918    fft_inst/register_mux_imag_in/data_out3_carry__1_2[7]
+    SLICE_X91Y29         LUT2 (Prop_A6LUT_SLICEL_I1_O)
+                                                      0.149     8.067 r  fft_inst/register_mux_imag_in/data_out3_carry__0_i_14__8/O
+                         net (fo=1, routed)           0.009     8.076    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__0_0[0]
+    SLICE_X91Y29         CARRY8 (Prop_CARRY8_SLICEL_S[0]_CO[7])
+                                                      0.190     8.266 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.052     8.318    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X91Y30         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     8.374 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3_carry__1/O[0]
+                         net (fo=1, routed)           0.435     8.809    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out_add_a_img[21]
+    SLICE_X92Y30         CARRY8 (Prop_CARRY8_SLICEL_S[1]_CO[3])
+                                                      0.180     8.989 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1/CO[3]
+                         net (fo=14, routed)          0.378     9.367    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out3__49_carry__1_n_4
+    SLICE_X91Y31         CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[5])
+                                                      0.101     9.468 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1__5_carry/CO[5]
+                         net (fo=13, routed)          0.263     9.731    fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/data_out1__5_carry_n_2
+    SLICE_X93Y29         LUT3 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.088     9.819 r  fft_inst/butterfly_stage/BF6/fft_img_1_round_and_sat/out11[4]_i_1/O
+                         net (fo=2, routed)           0.500    10.319    fft_inst/register_mux_imag_in/out11_reg[12]_0[4]
+    SLICE_X87Y28         FDCE                                         r  fft_inst/register_mux_imag_in/out11_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.332    11.923    fft_inst/register_mux_imag_in/clk_IBUF_BUFG
+    SLICE_X87Y28         FDCE                                         r  fft_inst/register_mux_imag_in/out11_reg[4]/C
+                         clock pessimism              0.390    12.313    
+                         clock uncertainty           -0.035    12.277    
+    SLICE_X87Y28         FDCE (Setup_GFF_SLICEL_C_D)
+                                                      0.025    12.302    fft_inst/register_mux_imag_in/out11_reg[4]
+  -------------------------------------------------------------------
+                         required time                         12.302    
+                         arrival time                         -10.319    
+  -------------------------------------------------------------------
+                         slack                                  1.983    
+
+Slack (MET) :             1.988ns  (required time - arrival time)
+  Source:                 fft_inst/CU/mux_sel_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_mux_real_in/out8_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.948ns  (logic 3.847ns (48.402%)  route 4.101ns (51.598%))
+  Logic Levels:           20  (CARRY8=7 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD=1 DSP_PREADD_DATA=2 LUT2=2 LUT3=3 LUT5=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.942ns = ( 11.942 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.385ns
+    Clock Pessimism Removal (CPR):    0.389ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.504ns (routing 0.684ns, distribution 0.820ns)
+  Clock Net Delay (Destination): 1.351ns (routing 0.621ns, distribution 0.730ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.504     2.385    fft_inst/CU/clk_IBUF_BUFG
+    SLICE_X79Y35         FDCE                                         r  fft_inst/CU/mux_sel_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y35         FDCE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.078     2.463 r  fft_inst/CU/mux_sel_reg[0]/Q
+                         net (fo=97, routed)          0.366     2.829    fft_inst/CU/Q[0]
+    SLICE_X75Y31         LUT3 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.123     2.952 r  fft_inst/CU/k3_i_22__8/O
+                         net (fo=138, routed)         0.745     3.697    fft_inst/CU/mux_sel_reg[0]_6
+    SLICE_X86Y5          LUT3 (Prop_D5LUT_SLICEM_I0_O)
+                                                      0.158     3.855 f  fft_inst/CU/k1_i_9__7/O
+                         net (fo=2, routed)           0.563     4.418    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/D[4]
+    DSP48E2_X11Y10       DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_DIN[4]_D_DATA[4])
+                                                      0.240     4.658 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/D_DATA[4]
+                         net (fo=1, routed)           0.000     4.658    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA.D_DATA<4>
+    DSP48E2_X11Y10       DSP_PREADD (Prop_DSP_PREADD_DSP48E2_D_DATA[4]_AD[4])
+                                                      0.524     5.182 f  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_INST/AD[4]
+                         net (fo=1, routed)           0.000     5.182    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD.AD<4>
+    DSP48E2_X11Y10       DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_AD[4]_AD_DATA[4])
+                                                      0.050     5.232 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA_INST/AD_DATA[4]
+                         net (fo=1, routed)           0.000     5.232    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_PREADD_DATA.AD_DATA<4>
+    DSP48E2_X11Y10       DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_AD_DATA[4]_V[4])
+                                                      0.580     5.812 f  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_MULTIPLIER_INST/V[4]
+                         net (fo=1, routed)           0.000     5.812    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_MULTIPLIER.V<4>
+    DSP48E2_X11Y10       DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_V[4]_V_DATA[4])
+                                                      0.046     5.858 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_M_DATA_INST/V_DATA[4]
+                         net (fo=1, routed)           0.000     5.858    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_M_DATA.V_DATA<4>
+    DSP48E2_X11Y10       DSP_ALU (Prop_DSP_ALU_DSP48E2_V_DATA[4]_ALU_OUT[4])
+                                                      0.571     6.429 f  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_ALU_INST/ALU_OUT[4]
+                         net (fo=1, routed)           0.000     6.429    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_ALU.ALU_OUT<4>
+    DSP48E2_X11Y10       DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[4]_P[4])
+                                                      0.109     6.538 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1/DSP_OUTPUT_INST/P[4]
+                         net (fo=4, routed)           0.454     6.992    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1_n_101
+    SLICE_X83Y25         LUT2 (Prop_E6LUT_SLICEM_I0_O)
+                                                      0.124     7.116 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry_i_4__2/O
+                         net (fo=1, routed)           0.014     7.130    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry_i_4__2_n_0
+    SLICE_X83Y25         CARRY8 (Prop_CARRY8_SLICEM_S[4]_CO[7])
+                                                      0.156     7.286 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry/CO[7]
+                         net (fo=1, routed)           0.026     7.312    fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry_n_0
+    SLICE_X83Y26         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     7.388 r  fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/out_real_carry__0/O[1]
+                         net (fo=2, routed)           0.364     7.752    fft_inst/CU/mul_real_out_12[3]
+    SLICE_X81Y17         LUT5 (Prop_A6LUT_SLICEM_I4_O)
+                                                      0.125     7.877 r  fft_inst/CU/data_out3_carry__0_i_8__59/O
+                         net (fo=1, routed)           0.013     7.890    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry_1[0]
+    SLICE_X81Y17         CARRY8 (Prop_CARRY8_SLICEM_S[0]_CO[7])
+                                                      0.192     8.082 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     8.108    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3_carry__0_n_0
+    SLICE_X81Y18         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     8.184 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3_carry__1/O[1]
+                         net (fo=1, routed)           0.470     8.654    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/out_sub_a_real[18]
+    SLICE_X81Y14         CARRY8 (Prop_CARRY8_SLICEM_S[6]_CO[7])
+                                                      0.117     8.771 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__0/CO[7]
+                         net (fo=1, routed)           0.026     8.797    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__0_n_0
+    SLICE_X81Y15         CARRY8 (Prop_CARRY8_SLICEM_CI_O[0])
+                                                      0.056     8.853 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__1/O[0]
+                         net (fo=4, routed)           0.234     9.087    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out3__54_carry__1_n_15
+    SLICE_X83Y13         LUT2 (Prop_B6LUT_SLICEM_I0_O)
+                                                      0.125     9.212 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry_i_8__13/O
+                         net (fo=1, routed)           0.016     9.228    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry_i_8__13_n_0
+    SLICE_X83Y13         CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[5])
+                                                      0.199     9.427 f  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry/CO[5]
+                         net (fo=13, routed)          0.343     9.770    fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/data_out1_carry_n_2
+    SLICE_X79Y9          LUT3 (Prop_D6LUT_SLICEM_I1_O)
+                                                      0.122     9.892 r  fft_inst/butterfly_stage/BF4/fft_real_2_round_and_sat/out8[0]_i_1/O
+                         net (fo=2, routed)           0.441    10.333    fft_inst/register_mux_real_in/in20[0]
+    SLICE_X81Y4          FDCE                                         r  fft_inst/register_mux_real_in/out8_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    AF18                                              0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280    10.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287    10.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.351    11.942    fft_inst/register_mux_real_in/clk_IBUF_BUFG
+    SLICE_X81Y4          FDCE                                         r  fft_inst/register_mux_real_in/out8_reg[0]/C
+                         clock pessimism              0.389    12.332    
+                         clock uncertainty           -0.035    12.296    
+    SLICE_X81Y4          FDCE (Setup_DFF_SLICEM_C_D)
+                                                      0.025    12.321    fft_inst/register_mux_real_in/out8_reg[0]
+  -------------------------------------------------------------------
+                         required time                         12.321    
+                         arrival time                         -10.333    
+  -------------------------------------------------------------------
+                         slack                                  1.988    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.018ns  (arrival time - required time)
+  Source:                 real_buf_reg[7][2]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out8_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.132ns  (logic 0.059ns (44.697%)  route 0.073ns (55.303%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.052ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.500ns
+    Source Clock Delay      (SCD):    2.001ns
+    Clock Pessimism Removal (CPR):    0.447ns
+  Clock Net Delay (Source):      1.410ns (routing 0.621ns, distribution 0.789ns)
+  Clock Net Delay (Destination): 1.619ns (routing 0.684ns, distribution 0.935ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.410     2.001    clk_IBUF_BUFG
+    SLICE_X91Y8          FDCE                                         r  real_buf_reg[7][2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y8          FDCE (Prop_CFF2_SLICEL_C_Q)
+                                                      0.059     2.060 r  real_buf_reg[7][2]/Q
+                         net (fo=1, routed)           0.073     2.133    fft_inst/register_inputs/out8_reg[7]_1[2]
+    SLICE_X91Y7          FDCE                                         r  fft_inst/register_inputs/out8_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.619     2.500    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X91Y7          FDCE                                         r  fft_inst/register_inputs/out8_reg[2]/C
+                         clock pessimism             -0.447     2.053    
+    SLICE_X91Y7          FDCE (Hold_GFF2_SLICEL_C_D)
+                                                      0.062     2.115    fft_inst/register_inputs/out8_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -2.115    
+                         arrival time                           2.133    
+  -------------------------------------------------------------------
+                         slack                                  0.018    
+
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 real_buf_reg[10][1]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out11_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.130ns  (logic 0.061ns (46.923%)  route 0.069ns (53.077%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.041ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.423ns
+    Source Clock Delay      (SCD):    1.933ns
+    Clock Pessimism Removal (CPR):    0.449ns
+  Clock Net Delay (Source):      1.342ns (routing 0.621ns, distribution 0.721ns)
+  Clock Net Delay (Destination): 1.542ns (routing 0.684ns, distribution 0.858ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.342     1.933    clk_IBUF_BUFG
+    SLICE_X76Y8          FDCE                                         r  real_buf_reg[10][1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y8          FDCE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.061     1.994 r  real_buf_reg[10][1]/Q
+                         net (fo=1, routed)           0.069     2.063    fft_inst/register_inputs/out11_reg[7]_1[1]
+    SLICE_X77Y8          FDCE                                         r  fft_inst/register_inputs/out11_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.542     2.423    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X77Y8          FDCE                                         r  fft_inst/register_inputs/out11_reg[1]/C
+                         clock pessimism             -0.449     1.974    
+    SLICE_X77Y8          FDCE (Hold_HFF2_SLICEL_C_D)
+                                                      0.062     2.036    fft_inst/register_inputs/out11_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -2.036    
+                         arrival time                           2.063    
+  -------------------------------------------------------------------
+                         slack                                  0.027    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 real_buf_reg[25][0]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out26_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.132ns  (logic 0.058ns (43.939%)  route 0.074ns (56.061%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.042ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.488ns
+    Source Clock Delay      (SCD):    1.999ns
+    Clock Pessimism Removal (CPR):    0.447ns
+  Clock Net Delay (Source):      1.408ns (routing 0.621ns, distribution 0.787ns)
+  Clock Net Delay (Destination): 1.607ns (routing 0.684ns, distribution 0.923ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.408     1.999    clk_IBUF_BUFG
+    SLICE_X90Y4          FDCE                                         r  real_buf_reg[25][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y4          FDCE (Prop_HFF_SLICEL_C_Q)
+                                                      0.058     2.057 r  real_buf_reg[25][0]/Q
+                         net (fo=1, routed)           0.074     2.131    fft_inst/register_inputs/out26_reg[7]_1[0]
+    SLICE_X90Y3          FDCE                                         r  fft_inst/register_inputs/out26_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.607     2.488    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X90Y3          FDCE                                         r  fft_inst/register_inputs/out26_reg[0]/C
+                         clock pessimism             -0.447     2.041    
+    SLICE_X90Y3          FDCE (Hold_GFF_SLICEL_C_D)
+                                                      0.060     2.101    fft_inst/register_inputs/out26_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -2.101    
+                         arrival time                           2.131    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+Slack (MET) :             0.031ns  (arrival time - required time)
+  Source:                 data_in[6]
+                            (input port clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            real_buf_reg[20][6]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.521ns  (logic 0.306ns (20.131%)  route 1.215ns (79.869%))
+  Logic Levels:           2  (IBUFCTRL=1 INBUF=1)
+  Input Delay:            1.000ns
+  Clock Path Skew:        2.428ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.428ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Net Delay (Destination): 1.547ns (routing 0.684ns, distribution 0.863ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                         input delay                  1.000     1.000    
+    AJ14                                              0.000     1.000 r  data_in[6] (IN)
+                         net (fo=0)                   0.000     1.000    data_in_IBUF[6]_inst/I
+    AJ14                 INBUF (Prop_INBUF_HPIOB_S_PAD_O)
+                                                      0.306     1.306 r  data_in_IBUF[6]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.306    data_in_IBUF[6]_inst/OUT
+    AJ14                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
+                                                      0.000     1.306 r  data_in_IBUF[6]_inst/IBUFCTRL_INST/O
+                         net (fo=32, routed)          1.215     2.521    data_in_IBUF[6]
+    SLICE_X74Y7          FDCE                                         r  real_buf_reg[20][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.547     2.428    clk_IBUF_BUFG
+    SLICE_X74Y7          FDCE                                         r  real_buf_reg[20][6]/C
+                         clock pessimism              0.000     2.428    
+    SLICE_X74Y7          FDCE (Hold_FFF2_SLICEM_C_D)
+                                                      0.062     2.490    real_buf_reg[20][6]
+  -------------------------------------------------------------------
+                         required time                         -2.490    
+                         arrival time                           2.521    
+  -------------------------------------------------------------------
+                         slack                                  0.031    
+
+Slack (MET) :             0.034ns  (arrival time - required time)
+  Source:                 real_buf_reg[17][0]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out18_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.144ns  (logic 0.059ns (40.972%)  route 0.085ns (59.028%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.050ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.427ns
+    Source Clock Delay      (SCD):    1.937ns
+    Clock Pessimism Removal (CPR):    0.440ns
+  Clock Net Delay (Source):      1.346ns (routing 0.621ns, distribution 0.725ns)
+  Clock Net Delay (Destination): 1.546ns (routing 0.684ns, distribution 0.862ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.346     1.937    clk_IBUF_BUFG
+    SLICE_X74Y8          FDCE                                         r  real_buf_reg[17][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X74Y8          FDCE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.059     1.996 r  real_buf_reg[17][0]/Q
+                         net (fo=1, routed)           0.085     2.081    fft_inst/register_inputs/out18_reg[7]_1[0]
+    SLICE_X74Y9          FDCE                                         r  fft_inst/register_inputs/out18_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.546     2.427    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X74Y9          FDCE                                         r  fft_inst/register_inputs/out18_reg[0]/C
+                         clock pessimism             -0.440     1.987    
+    SLICE_X74Y9          FDCE (Hold_HFF_SLICEM_C_D)
+                                                      0.060     2.047    fft_inst/register_inputs/out18_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -2.047    
+                         arrival time                           2.081    
+  -------------------------------------------------------------------
+                         slack                                  0.034    
+
+Slack (MET) :             0.035ns  (arrival time - required time)
+  Source:                 real_buf_reg[11][5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out12_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.136ns  (logic 0.058ns (42.647%)  route 0.078ns (57.353%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.041ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.499ns
+    Source Clock Delay      (SCD):    2.001ns
+    Clock Pessimism Removal (CPR):    0.457ns
+  Clock Net Delay (Source):      1.410ns (routing 0.621ns, distribution 0.789ns)
+  Clock Net Delay (Destination): 1.618ns (routing 0.684ns, distribution 0.934ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.410     2.001    clk_IBUF_BUFG
+    SLICE_X92Y8          FDCE                                         r  real_buf_reg[11][5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y8          FDCE (Prop_AFF_SLICEL_C_Q)
+                                                      0.058     2.059 r  real_buf_reg[11][5]/Q
+                         net (fo=1, routed)           0.078     2.137    fft_inst/register_inputs/out12_reg[7]_1[5]
+    SLICE_X91Y8          FDCE                                         r  fft_inst/register_inputs/out12_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.618     2.499    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X91Y8          FDCE                                         r  fft_inst/register_inputs/out12_reg[5]/C
+                         clock pessimism             -0.457     2.042    
+    SLICE_X91Y8          FDCE (Hold_HFF_SLICEL_C_D)
+                                                      0.060     2.102    fft_inst/register_inputs/out12_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -2.102    
+                         arrival time                           2.137    
+  -------------------------------------------------------------------
+                         slack                                  0.035    
+
+Slack (MET) :             0.036ns  (arrival time - required time)
+  Source:                 real_buf_reg[1][6]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out2_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.200ns  (logic 0.059ns (29.500%)  route 0.141ns (70.500%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.104ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.401ns
+    Source Clock Delay      (SCD):    1.908ns
+    Clock Pessimism Removal (CPR):    0.390ns
+  Clock Net Delay (Source):      1.317ns (routing 0.621ns, distribution 0.696ns)
+  Clock Net Delay (Destination): 1.520ns (routing 0.684ns, distribution 0.836ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.317     1.908    clk_IBUF_BUFG
+    SLICE_X75Y33         FDCE                                         r  real_buf_reg[1][6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y33         FDCE (Prop_GFF_SLICEL_C_Q)
+                                                      0.059     1.967 r  real_buf_reg[1][6]/Q
+                         net (fo=1, routed)           0.141     2.108    fft_inst/register_inputs/out2_reg[7]_1[6]
+    SLICE_X76Y33         FDCE                                         r  fft_inst/register_inputs/out2_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.520     2.401    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X76Y33         FDCE                                         r  fft_inst/register_inputs/out2_reg[6]/C
+                         clock pessimism             -0.390     2.012    
+    SLICE_X76Y33         FDCE (Hold_GFF_SLICEL_C_D)
+                                                      0.060     2.072    fft_inst/register_inputs/out2_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -2.072    
+                         arrival time                           2.108    
+  -------------------------------------------------------------------
+                         slack                                  0.036    
+
+Slack (MET) :             0.038ns  (arrival time - required time)
+  Source:                 real_buf_reg[19][1]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out20_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.107ns  (logic 0.039ns (36.449%)  route 0.068ns (63.551%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.023ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.562ns
+    Source Clock Delay      (SCD):    1.210ns
+    Clock Pessimism Removal (CPR):    0.329ns
+  Clock Net Delay (Source):      0.884ns (routing 0.378ns, distribution 0.506ns)
+  Clock Net Delay (Destination): 1.012ns (routing 0.425ns, distribution 0.587ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.165     0.165 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.165    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.165 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.144     0.309    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.017     0.326 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        0.884     1.210    clk_IBUF_BUFG
+    SLICE_X89Y11         FDCE                                         r  real_buf_reg[19][1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y11         FDCE (Prop_HFF_SLICEM_C_Q)
+                                                      0.039     1.249 r  real_buf_reg[19][1]/Q
+                         net (fo=1, routed)           0.068     1.317    fft_inst/register_inputs/out20_reg[7]_1[1]
+    SLICE_X89Y12         FDCE                                         r  fft_inst/register_inputs/out20_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.350     0.350 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.350    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.350 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.181     0.531    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.019     0.550 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.012     1.562    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X89Y12         FDCE                                         r  fft_inst/register_inputs/out20_reg[1]/C
+                         clock pessimism             -0.329     1.234    
+    SLICE_X89Y12         FDCE (Hold_HFF_SLICEM_C_D)
+                                                      0.046     1.280    fft_inst/register_inputs/out20_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.280    
+                         arrival time                           1.317    
+  -------------------------------------------------------------------
+                         slack                                  0.038    
+
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 real_buf_reg[18][1]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out19_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.147ns  (logic 0.060ns (40.816%)  route 0.087ns (59.184%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.046ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.425ns
+    Source Clock Delay      (SCD):    1.930ns
+    Clock Pessimism Removal (CPR):    0.449ns
+  Clock Net Delay (Source):      1.339ns (routing 0.621ns, distribution 0.718ns)
+  Clock Net Delay (Destination): 1.544ns (routing 0.684ns, distribution 0.860ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.339     1.930    clk_IBUF_BUFG
+    SLICE_X75Y12         FDCE                                         r  real_buf_reg[18][1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y12         FDCE (Prop_BFF2_SLICEL_C_Q)
+                                                      0.060     1.990 r  real_buf_reg[18][1]/Q
+                         net (fo=1, routed)           0.087     2.077    fft_inst/register_inputs/out19_reg[7]_1[1]
+    SLICE_X74Y12         FDCE                                         r  fft_inst/register_inputs/out19_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.544     2.425    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X74Y12         FDCE                                         r  fft_inst/register_inputs/out19_reg[1]/C
+                         clock pessimism             -0.449     1.976    
+    SLICE_X74Y12         FDCE (Hold_GFF_SLICEM_C_D)
+                                                      0.060     2.036    fft_inst/register_inputs/out19_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -2.036    
+                         arrival time                           2.077    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 real_buf_reg[28][7]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fft_inst/register_inputs/out29_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.140ns  (logic 0.060ns (42.857%)  route 0.080ns (57.143%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.039ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.499ns
+    Source Clock Delay      (SCD):    2.003ns
+    Clock Pessimism Removal (CPR):    0.457ns
+  Clock Net Delay (Source):      1.412ns (routing 0.621ns, distribution 0.791ns)
+  Clock Net Delay (Destination): 1.618ns (routing 0.684ns, distribution 0.934ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.280     0.280 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.280    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.280 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.567    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.591 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.412     2.003    clk_IBUF_BUFG
+    SLICE_X92Y8          FDCE                                         r  real_buf_reg[28][7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y8          FDCE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.060     2.063 r  real_buf_reg[28][7]/Q
+                         net (fo=1, routed)           0.080     2.143    fft_inst/register_inputs/out29_reg[7]_1[7]
+    SLICE_X91Y8          FDCE                                         r  fft_inst/register_inputs/out29_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AF18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk_IBUF_inst/I
+    AF18                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.530     0.530 r  clk_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.530    clk_IBUF_inst/OUT
+    AF18                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.530 r  clk_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     0.853    clk_IBUF
+    BUFGCE_X1Y26         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.881 r  clk_IBUF_BUFG_inst/O
+    X2Y0 (CLOCK_ROOT)    net (fo=2243, routed)        1.618     2.499    fft_inst/register_inputs/clk_IBUF_BUFG
+    SLICE_X91Y8          FDCE                                         r  fft_inst/register_inputs/out29_reg[7]/C
+                         clock pessimism             -0.457     2.042    
+    SLICE_X91Y8          FDCE (Hold_EFF_SLICEL_C_D)
+                                                      0.060     2.102    fft_inst/register_inputs/out29_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -2.102    
+                         arrival time                           2.143    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin   Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     BUFGCE/I  n/a            1.290         10.000      8.710      BUFGCE_X1Y26  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X82Y24  data_out_reg[0]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X81Y25  data_out_reg[10]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X82Y25  data_out_reg[11]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X81Y25  data_out_reg[12]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X74Y5   fft_inst/register_inputs/out10_reg[0]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X74Y10  fft_inst/register_inputs/out10_reg[1]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X74Y12  fft_inst/register_inputs/out10_reg[2]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X76Y7   fft_inst/register_inputs/out10_reg[3]/C
+Min Period        n/a     FDCE/C    n/a            0.550         10.000      9.450      SLICE_X73Y10  fft_inst/register_inputs/out10_reg[4]/C
+Low Pulse Width   Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y10  fft_inst/register_inputs/out10_reg[1]/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y10  fft_inst/register_inputs/out10_reg[1]/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X76Y7   fft_inst/register_inputs/out10_reg[3]/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y5   fft_inst/register_inputs/out10_reg[5]/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y5   fft_inst/register_inputs/out10_reg[6]/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y6   fft_enable_reg/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y11  fft_inst/register_inputs/out11_reg[2]/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X86Y8   fft_inst/register_inputs/out12_reg[4]/C
+Low Pulse Width   Fast    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X91Y8   fft_inst/register_inputs/out12_reg[5]/C
+Low Pulse Width   Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X93Y8   fft_inst/register_inputs/out12_reg[6]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X85Y4   fft_inst/register_inputs/out15_reg[3]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y3   fft_inst/register_inputs/out16_reg[7]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X85Y4   fft_inst/register_inputs/out22_reg[3]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y3   fft_inst/register_inputs/out31_reg[6]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y10  fft_inst/register_inputs/out6_reg[0]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y10  fft_inst/register_inputs/out6_reg[3]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y10  fft_inst/register_inputs/out6_reg[5]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y21  fft_inst/register_inputs/out7_reg[6]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X74Y21  fft_inst/register_inputs/out7_reg[7]/C
+High Pulse Width  Slow    FDCE/C    n/a            0.275         5.000       4.725      SLICE_X91Y33  fft_inst/register_mux_imag_in/out10_reg[11]/C
+
+
+

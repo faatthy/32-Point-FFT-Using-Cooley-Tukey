@@ -1,0 +1,807 @@
+
+*** Running vivado
+    with args -log FFT_WRAPPER.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_WRAPPER.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source FFT_WRAPPER.tcl -notrace
+Command: synth_design -top FFT_WRAPPER -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3316 
+WARNING: [Synth 8-992] valid1 is already implicitly declared earlier [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_top.v:655]
+WARNING: [Synth 8-992] valid_real is already implicitly declared earlier [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_top.v:1092]
+WARNING: [Synth 8-992] valid_imag is already implicitly declared earlier [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_top.v:1092]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/sources_1/new/FFT_WRAPPER.v:26]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1465.906 ; gain = 8.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FFT_WRAPPER' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/sources_1/new/FFT_WRAPPER.v:1]
+	Parameter inADC bound to: 8 - type: integer 
+	Parameter inWordWidth_1 bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_TOP' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_top.v:2]
+	Parameter inADC bound to: 8 - type: integer 
+	Parameter inWordWidth_1 bound to: 13 - type: integer 
+	Parameter inWordWidth_2 bound to: 8 - type: integer 
+	Parameter I1 bound to: 16 - type: integer 
+	Parameter F1 bound to: 6 - type: integer 
+	Parameter I2 bound to: 12 - type: integer 
+	Parameter F2 bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Register' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_register_bank.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register' (1#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_register_bank.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ROM_W_Real' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_real_rom.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ROM_W_Real' (2#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_real_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ROM_W_Imag' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_imag_rom.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ROM_W_Imag' (3#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_imag_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_control_unit.v:1]
+	Parameter mux_width bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (4#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_control_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'W_SELECT_STAGE' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_mux_selection.v:4]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MUX5x1' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux5x1.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter Width_Mux bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX5x1' (5#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux5x1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'W_SELECT_STAGE' (6#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_mux_selection.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Register__parameterized0' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_register_bank.v:1]
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register__parameterized0' (6#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_register_bank.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SELECT_STAGE' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux_selection.v:6]
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MUX5x1__parameterized0' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux5x1.v:1]
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+	Parameter Width_Mux bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX5x1__parameterized0' (6#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux5x1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SELECT_STAGE' (7#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux_selection.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Butterfly' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_butterfly.v:2]
+	Parameter inWordWidth_1 bound to: 13 - type: integer 
+	Parameter inWordWidth_2 bound to: 8 - type: integer 
+	Parameter I1 bound to: 16 - type: integer 
+	Parameter F1 bound to: 6 - type: integer 
+	Parameter I2 bound to: 12 - type: integer 
+	Parameter F2 bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MAC' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mac_unit.v:1]
+	Parameter inWordWidth_1 bound to: 13 - type: integer 
+	Parameter inWordWidth_2 bound to: 8 - type: integer 
+	Parameter I1 bound to: 16 - type: integer 
+	Parameter F1 bound to: 6 - type: integer 
+	Parameter I2 bound to: 12 - type: integer 
+	Parameter F2 bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'complex_mult' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_complex_mult.v:1]
+	Parameter inWordWidth_1 bound to: 13 - type: integer 
+	Parameter inWordWidth_2 bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'complex_mult' (8#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_complex_mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'round_and_sat' [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_round_and_sat.sv:1]
+	Parameter I1 bound to: 16 - type: integer 
+	Parameter F1 bound to: 6 - type: integer 
+	Parameter I2 bound to: 12 - type: integer 
+	Parameter F2 bound to: 0 - type: integer 
+	Parameter IN_WIDTH bound to: 32'sb00000000000000000000000000010111 
+	Parameter OUT_WIDTH bound to: 32'sb00000000000000000000000000001101 
+	Parameter F_DIFF bound to: 32'sb00000000000000000000000000000110 
+	Parameter ROUND_CONST bound to: 23'sb00000000000000000100000 
+	Parameter MAX_POS bound to: 13'sb0111111111111 
+	Parameter MIN_NEG bound to: 13'sb1000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'round_and_sat' (9#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_round_and_sat.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC' (10#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mac_unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Butterfly' (11#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_butterfly.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_TOP' (12#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_top.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_WRAPPER' (13#1) [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/sources_1/new/FFT_WRAPPER.v:1]
+WARNING: [Synth 8-3331] design MAC has unconnected port clk
+WARNING: [Synth 8-3331] design MAC has unconnected port rst_n
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[7]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[6]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[5]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[4]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[3]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[2]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[1]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1509.195 ; gain = 51.344
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1527.125 ; gain = 69.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1527.125 ; gain = 69.273
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/constrs_2/new/cons.xdc]
+Finished Parsing XDC File [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/constrs_2/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/constrs_2/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FFT_WRAPPER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FFT_WRAPPER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1681.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1681.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1681.766 ; gain = 223.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1681.766 ; gain = 223.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1681.766 ; gain = 223.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1681.766 ; gain = 223.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 64    
+	   2 Input     23 Bit       Adders := 32    
+	   3 Input     23 Bit       Adders := 32    
+	   3 Input     22 Bit       Adders := 16    
+	   2 Input     22 Bit       Adders := 16    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 129   
+	                8 Bit    Registers := 64    
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 129   
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FFT_WRAPPER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 32    
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 1     
+Module Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 32    
+	                1 Bit    Registers := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module Register__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 32    
+	                1 Bit    Registers := 1     
+Module complex_mult 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     22 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+Module round_and_sat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+Module MAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 2     
+	   3 Input     23 Bit       Adders := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: Generating DSP fft_complex_mult_unit/k3, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k3 is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: operator fft_complex_mult_unit/cd is absorbed into DSP fft_complex_mult_unit/k3.
+DSP Report: Generating DSP fft_complex_mult_unit/k1, operation Mode is: (D+A)*B.
+DSP Report: operator fft_complex_mult_unit/k1 is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: operator fft_complex_mult_unit/ab is absorbed into DSP fft_complex_mult_unit/k1.
+DSP Report: Generating DSP fft_complex_mult_unit/k2, operation Mode is: (D-A)*B.
+DSP Report: operator fft_complex_mult_unit/k2 is absorbed into DSP fft_complex_mult_unit/k2.
+DSP Report: operator fft_complex_mult_unit/dc is absorbed into DSP fft_complex_mult_unit/k2.
+WARNING: [Synth 8-3331] design MAC has unconnected port clk
+WARNING: [Synth 8-3331] design MAC has unconnected port rst_n
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[7]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[6]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[5]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[4]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[3]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[2]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[1]
+WARNING: [Synth 8-3331] design W_SELECT_STAGE has unconnected port W0_i[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1681.766 ; gain = 223.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D+A)*B     | 13     | 8      | -      | 13     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|complex_mult | (D-A)*B     | 8      | 13     | -      | 8      | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2255.652 ; gain = 797.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2369.449 ; gain = 911.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'fft_inst/register_outputs_real/valid_reg' (FDC) to 'fft_inst/register_outputs_imag/valid_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2376.695 ; gain = 918.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2378.223 ; gain = 920.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2378.223 ; gain = 920.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2378.223 ; gain = 920.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2378.223 ; gain = 920.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2378.223 ; gain = 920.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2378.223 ; gain = 920.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |CARRY8          |   608|
+|3     |DSP_ALU         |    48|
+|4     |DSP_A_B_DATA    |    48|
+|5     |DSP_C_DATA      |    48|
+|6     |DSP_MULTIPLIER  |    48|
+|7     |DSP_M_DATA      |    48|
+|8     |DSP_OUTPUT      |    48|
+|9     |DSP_PREADD      |    48|
+|10    |DSP_PREADD_DATA |    48|
+|11    |LUT1            |   660|
+|12    |LUT2            |  1833|
+|13    |LUT3            |  1317|
+|14    |LUT4            |   484|
+|15    |LUT5            |   475|
+|16    |LUT6            |  1080|
+|17    |MUXF7           |   104|
+|18    |MUXF8           |    52|
+|19    |FDCE            |  2243|
+|20    |IBUF            |    11|
+|21    |OBUF            |    14|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------------------------------+--------------------------------------+------+
+|      |Instance                         |Module                                |Cells |
++------+---------------------------------+--------------------------------------+------+
+|1     |top                              |                                      |  9266|
+|2     |  fft_inst                       |FFT_TOP                               |  8894|
+|3     |    register_inputs              |Register                              |   256|
+|4     |    CU                           |control_unit                          |  1488|
+|5     |    butterfly_stage              |Butterfly                             |  4194|
+|6     |      BF1                        |MAC                                   |   257|
+|7     |        fft_complex_mult_unit    |complex_mult_91                       |   101|
+|8     |          k3                     |\fft_complex_mult_unit/k3_funnel      |     8|
+|9     |          k1                     |\fft_complex_mult_unit/k3_funnel__1   |     8|
+|10    |          k2                     |\fft_complex_mult_unit/k3_funnel__2   |     8|
+|11    |        fft_img_1_round_and_sat  |round_and_sat_92                      |    39|
+|12    |        fft_img_2_round_and_sat  |round_and_sat_93                      |    39|
+|13    |        fft_real_1_round_and_sat |round_and_sat_94                      |    39|
+|14    |        fft_real_2_round_and_sat |round_and_sat_95                      |    39|
+|15    |      BF10                       |MAC_3                                 |   270|
+|16    |        fft_complex_mult_unit    |complex_mult_86                       |   114|
+|17    |          k3                     |\fft_complex_mult_unit/k3_funnel__27  |     8|
+|18    |          k1                     |\fft_complex_mult_unit/k3_funnel__28  |     8|
+|19    |          k2                     |\fft_complex_mult_unit/k3_funnel__29  |     8|
+|20    |        fft_img_1_round_and_sat  |round_and_sat_87                      |    39|
+|21    |        fft_img_2_round_and_sat  |round_and_sat_88                      |    39|
+|22    |        fft_real_1_round_and_sat |round_and_sat_89                      |    39|
+|23    |        fft_real_2_round_and_sat |round_and_sat_90                      |    39|
+|24    |      BF11                       |MAC_4                                 |   273|
+|25    |        fft_complex_mult_unit    |complex_mult_81                       |   117|
+|26    |          k3                     |\fft_complex_mult_unit/k3_funnel__30  |     8|
+|27    |          k1                     |\fft_complex_mult_unit/k3_funnel__31  |     8|
+|28    |          k2                     |\fft_complex_mult_unit/k3_funnel__32  |     8|
+|29    |        fft_img_1_round_and_sat  |round_and_sat_82                      |    39|
+|30    |        fft_img_2_round_and_sat  |round_and_sat_83                      |    39|
+|31    |        fft_real_1_round_and_sat |round_and_sat_84                      |    39|
+|32    |        fft_real_2_round_and_sat |round_and_sat_85                      |    39|
+|33    |      BF12                       |MAC_5                                 |   258|
+|34    |        fft_complex_mult_unit    |complex_mult_76                       |   102|
+|35    |          k3                     |\fft_complex_mult_unit/k3_funnel__33  |     8|
+|36    |          k1                     |\fft_complex_mult_unit/k3_funnel__34  |     8|
+|37    |          k2                     |\fft_complex_mult_unit/k3_funnel__35  |     8|
+|38    |        fft_img_1_round_and_sat  |round_and_sat_77                      |    39|
+|39    |        fft_img_2_round_and_sat  |round_and_sat_78                      |    39|
+|40    |        fft_real_1_round_and_sat |round_and_sat_79                      |    39|
+|41    |        fft_real_2_round_and_sat |round_and_sat_80                      |    39|
+|42    |      BF13                       |MAC_6                                 |   257|
+|43    |        fft_complex_mult_unit    |complex_mult_71                       |   101|
+|44    |          k3                     |\fft_complex_mult_unit/k3_funnel__36  |     8|
+|45    |          k1                     |\fft_complex_mult_unit/k3_funnel__37  |     8|
+|46    |          k2                     |\fft_complex_mult_unit/k3_funnel__38  |     8|
+|47    |        fft_img_1_round_and_sat  |round_and_sat_72                      |    39|
+|48    |        fft_img_2_round_and_sat  |round_and_sat_73                      |    39|
+|49    |        fft_real_1_round_and_sat |round_and_sat_74                      |    39|
+|50    |        fft_real_2_round_and_sat |round_and_sat_75                      |    39|
+|51    |      BF14                       |MAC_7                                 |   259|
+|52    |        fft_complex_mult_unit    |complex_mult_66                       |   103|
+|53    |          k3                     |\fft_complex_mult_unit/k3_funnel__39  |     8|
+|54    |          k1                     |\fft_complex_mult_unit/k3_funnel__40  |     8|
+|55    |          k2                     |\fft_complex_mult_unit/k3_funnel__41  |     8|
+|56    |        fft_img_1_round_and_sat  |round_and_sat_67                      |    39|
+|57    |        fft_img_2_round_and_sat  |round_and_sat_68                      |    39|
+|58    |        fft_real_1_round_and_sat |round_and_sat_69                      |    39|
+|59    |        fft_real_2_round_and_sat |round_and_sat_70                      |    39|
+|60    |      BF15                       |MAC_8                                 |   257|
+|61    |        fft_complex_mult_unit    |complex_mult_61                       |   101|
+|62    |          k3                     |\fft_complex_mult_unit/k3_funnel__42  |     8|
+|63    |          k1                     |\fft_complex_mult_unit/k3_funnel__43  |     8|
+|64    |          k2                     |\fft_complex_mult_unit/k3_funnel__44  |     8|
+|65    |        fft_img_1_round_and_sat  |round_and_sat_62                      |    39|
+|66    |        fft_img_2_round_and_sat  |round_and_sat_63                      |    39|
+|67    |        fft_real_1_round_and_sat |round_and_sat_64                      |    39|
+|68    |        fft_real_2_round_and_sat |round_and_sat_65                      |    39|
+|69    |      BF16                       |MAC_9                                 |   257|
+|70    |        fft_complex_mult_unit    |complex_mult_56                       |   101|
+|71    |          k3                     |\fft_complex_mult_unit/k3_funnel__45  |     8|
+|72    |          k1                     |\fft_complex_mult_unit/k3_funnel__46  |     8|
+|73    |          k2                     |\fft_complex_mult_unit/k3_funnel__47  |     8|
+|74    |        fft_img_1_round_and_sat  |round_and_sat_57                      |    39|
+|75    |        fft_img_2_round_and_sat  |round_and_sat_58                      |    39|
+|76    |        fft_real_1_round_and_sat |round_and_sat_59                      |    39|
+|77    |        fft_real_2_round_and_sat |round_and_sat_60                      |    39|
+|78    |      BF2                        |MAC_10                                |   269|
+|79    |        fft_complex_mult_unit    |complex_mult_51                       |   113|
+|80    |          k3                     |\fft_complex_mult_unit/k3_funnel__3   |     8|
+|81    |          k1                     |\fft_complex_mult_unit/k3_funnel__4   |     8|
+|82    |          k2                     |\fft_complex_mult_unit/k3_funnel__5   |     8|
+|83    |        fft_img_1_round_and_sat  |round_and_sat_52                      |    39|
+|84    |        fft_img_2_round_and_sat  |round_and_sat_53                      |    39|
+|85    |        fft_real_1_round_and_sat |round_and_sat_54                      |    39|
+|86    |        fft_real_2_round_and_sat |round_and_sat_55                      |    39|
+|87    |      BF3                        |MAC_11                                |   257|
+|88    |        fft_complex_mult_unit    |complex_mult_46                       |   101|
+|89    |          k3                     |\fft_complex_mult_unit/k3_funnel__6   |     8|
+|90    |          k1                     |\fft_complex_mult_unit/k3_funnel__7   |     8|
+|91    |          k2                     |\fft_complex_mult_unit/k3_funnel__8   |     8|
+|92    |        fft_img_1_round_and_sat  |round_and_sat_47                      |    39|
+|93    |        fft_img_2_round_and_sat  |round_and_sat_48                      |    39|
+|94    |        fft_real_1_round_and_sat |round_and_sat_49                      |    39|
+|95    |        fft_real_2_round_and_sat |round_and_sat_50                      |    39|
+|96    |      BF4                        |MAC_12                                |   263|
+|97    |        fft_complex_mult_unit    |complex_mult_41                       |   107|
+|98    |          k3                     |\fft_complex_mult_unit/k3_funnel__9   |     8|
+|99    |          k1                     |\fft_complex_mult_unit/k3_funnel__10  |     8|
+|100   |          k2                     |\fft_complex_mult_unit/k3_funnel__11  |     8|
+|101   |        fft_img_1_round_and_sat  |round_and_sat_42                      |    39|
+|102   |        fft_img_2_round_and_sat  |round_and_sat_43                      |    39|
+|103   |        fft_real_1_round_and_sat |round_and_sat_44                      |    39|
+|104   |        fft_real_2_round_and_sat |round_and_sat_45                      |    39|
+|105   |      BF5                        |MAC_13                                |   264|
+|106   |        fft_complex_mult_unit    |complex_mult_36                       |   108|
+|107   |          k3                     |\fft_complex_mult_unit/k3_funnel__12  |     8|
+|108   |          k1                     |\fft_complex_mult_unit/k3_funnel__13  |     8|
+|109   |          k2                     |\fft_complex_mult_unit/k3_funnel__14  |     8|
+|110   |        fft_img_1_round_and_sat  |round_and_sat_37                      |    39|
+|111   |        fft_img_2_round_and_sat  |round_and_sat_38                      |    39|
+|112   |        fft_real_1_round_and_sat |round_and_sat_39                      |    39|
+|113   |        fft_real_2_round_and_sat |round_and_sat_40                      |    39|
+|114   |      BF6                        |MAC_14                                |   275|
+|115   |        fft_complex_mult_unit    |complex_mult_31                       |   119|
+|116   |          k3                     |\fft_complex_mult_unit/k3_funnel__15  |     8|
+|117   |          k1                     |\fft_complex_mult_unit/k3_funnel__16  |     8|
+|118   |          k2                     |\fft_complex_mult_unit/k3_funnel__17  |     8|
+|119   |        fft_img_1_round_and_sat  |round_and_sat_32                      |    39|
+|120   |        fft_img_2_round_and_sat  |round_and_sat_33                      |    39|
+|121   |        fft_real_1_round_and_sat |round_and_sat_34                      |    39|
+|122   |        fft_real_2_round_and_sat |round_and_sat_35                      |    39|
+|123   |      BF7                        |MAC_15                                |   257|
+|124   |        fft_complex_mult_unit    |complex_mult_26                       |   101|
+|125   |          k3                     |\fft_complex_mult_unit/k3_funnel__18  |     8|
+|126   |          k1                     |\fft_complex_mult_unit/k3_funnel__19  |     8|
+|127   |          k2                     |\fft_complex_mult_unit/k3_funnel__20  |     8|
+|128   |        fft_img_1_round_and_sat  |round_and_sat_27                      |    39|
+|129   |        fft_img_2_round_and_sat  |round_and_sat_28                      |    39|
+|130   |        fft_real_1_round_and_sat |round_and_sat_29                      |    39|
+|131   |        fft_real_2_round_and_sat |round_and_sat_30                      |    39|
+|132   |      BF8                        |MAC_16                                |   257|
+|133   |        fft_complex_mult_unit    |complex_mult_21                       |   101|
+|134   |          k3                     |\fft_complex_mult_unit/k3_funnel__21  |     8|
+|135   |          k1                     |\fft_complex_mult_unit/k3_funnel__22  |     8|
+|136   |          k2                     |\fft_complex_mult_unit/k3_funnel__23  |     8|
+|137   |        fft_img_1_round_and_sat  |round_and_sat_22                      |    39|
+|138   |        fft_img_2_round_and_sat  |round_and_sat_23                      |    39|
+|139   |        fft_real_1_round_and_sat |round_and_sat_24                      |    39|
+|140   |        fft_real_2_round_and_sat |round_and_sat_25                      |    39|
+|141   |      BF9                        |MAC_17                                |   264|
+|142   |        fft_complex_mult_unit    |complex_mult                          |   108|
+|143   |          k3                     |\fft_complex_mult_unit/k3_funnel__24  |     8|
+|144   |          k1                     |\fft_complex_mult_unit/k3_funnel__25  |     8|
+|145   |          k2                     |\fft_complex_mult_unit/k3_funnel__26  |     8|
+|146   |        fft_img_1_round_and_sat  |round_and_sat                         |    39|
+|147   |        fft_img_2_round_and_sat  |round_and_sat_18                      |    39|
+|148   |        fft_real_1_round_and_sat |round_and_sat_19                      |    39|
+|149   |        fft_real_2_round_and_sat |round_and_sat_20                      |    39|
+|150   |    register_mux_imag_in         |Register__parameterized0              |  1139|
+|151   |    register_mux_real_in         |Register__parameterized0_0            |   604|
+|152   |    register_outputs_imag        |Register__parameterized0_1            |   614|
+|153   |    register_outputs_real        |Register__parameterized0_2            |   598|
++------+---------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2378.223 ; gain = 920.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 2378.223 ; gain = 765.730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2378.223 ; gain = 920.371
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 824 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2404.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 48 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 2404.730 ; gain = 2049.559
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2404.730 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.runs/synth_1/FFT_WRAPPER.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FFT_WRAPPER_utilization_synth.rpt -pb FFT_WRAPPER_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 20 19:08:49 2025...

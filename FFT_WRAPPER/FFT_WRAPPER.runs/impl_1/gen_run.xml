@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1753027652">
+  <File Type="BITSTR-BMM" Name="FFT_WRAPPER_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FFT_WRAPPER_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="FFT_WRAPPER_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="FFT_WRAPPER_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FFT_WRAPPER.tcl"/>
+  <File Type="OPT-TIMING" Name="FFT_WRAPPER_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="FFT_WRAPPER_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="FFT_WRAPPER_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FFT_WRAPPER_reports.tcl"/>
+  <File Type="OPT-DRC" Name="FFT_WRAPPER_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FFT_WRAPPER.hwdef"/>
+  <File Type="PWROPT-DCP" Name="FFT_WRAPPER_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="FFT_WRAPPER_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="FFT_WRAPPER_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="FFT_WRAPPER_placed.dcp"/>
+  <File Type="PLACE-IO" Name="FFT_WRAPPER_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FFT_WRAPPER_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FFT_WRAPPER_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FFT_WRAPPER_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FFT_WRAPPER_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FFT_WRAPPER_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FFT_WRAPPER_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="FFT_WRAPPER.bgn"/>
+  <File Type="PLACE-TIMING" Name="FFT_WRAPPER_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FFT_WRAPPER_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="FFT_WRAPPER.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="FFT_WRAPPER_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="FFT_WRAPPER_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="FFT_WRAPPER_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="FFT_WRAPPER.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="FFT_WRAPPER_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FFT_WRAPPER_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="FFT_WRAPPER_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FFT_WRAPPER_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="FFT_WRAPPER_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FFT_WRAPPER_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FFT_WRAPPER.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="FFT_WRAPPER_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="FFT_WRAPPER.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FFT_WRAPPER_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FFT_WRAPPER_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="FFT_WRAPPER.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FFT_WRAPPER_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FFT_WRAPPER_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="FFT_WRAPPER_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FFT_WRAPPER_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FFT_WRAPPER_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FFT_WRAPPER_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FFT_WRAPPER_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="FFT_WRAPPER_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="FFT_WRAPPER_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FFT_WRAPPER_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FFT_WRAPPER_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FFT_WRAPPER_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FFT_WRAPPER_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FFT_WRAPPER_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FFT_WRAPPER_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FFT_WRAPPER_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="FFT_WRAPPER_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FFT_WRAPPER_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FFT_WRAPPER_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="FFT_WRAPPER.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FFT_WRAPPER_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="FFT_WRAPPER.rbt"/>
+  <File Type="BITSTR-NKY" Name="FFT_WRAPPER.nky"/>
+  <File Type="BG-DRC" Name="FFT_WRAPPER.drc"/>
+  <File Type="RDI-RDI" Name="FFT_WRAPPER.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/fft32_butterfly.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_complex_mult.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_control_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_mac_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_mux5x1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_mux_selection.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_register_bank.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_w_imag_rom.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_w_mux_selection.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_w_real_rom.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fft32_round_and_sat.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FFT_WRAPPER.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FFT_WRAPPER"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/new/cons.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/cons.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

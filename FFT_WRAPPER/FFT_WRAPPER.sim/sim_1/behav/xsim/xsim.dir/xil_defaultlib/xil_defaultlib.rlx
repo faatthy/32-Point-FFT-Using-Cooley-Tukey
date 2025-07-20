@@ -1,0 +1,19 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/sim_1/new/fft_wrapper_tb.v,1752835426,verilog,,,,fft_wrapper_tb,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/FFT_WRAPPER.srcs/sources_1/new/FFT_WRAPPER.v,1752835349,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_butterfly.v,,FFT_WRAPPER,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_butterfly.v,1746651152,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_complex_mult.v,,Butterfly,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_complex_mult.v,1746811035,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_control_unit.v,,complex_mult,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_control_unit.v,1752834585,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mac_unit.v,,control_unit,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mac_unit.v,1746811087,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux5x1.v,,MAC,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux5x1.v,1746153208,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux_selection.v,,MUX5x1,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_mux_selection.v,1746651723,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_register_bank.v,,SELECT_STAGE,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_register_bank.v,1752829196,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_top.v,,Register,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_round_and_sat.sv,1746811109,systemVerilog,,,,round_and_sat,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_top.v,1752830689,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_imag_rom.v,,FFT_TOP,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_imag_rom.v,1746809329,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_mux_selection.v,,ROM_W_Imag,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_mux_selection.v,1746174233,verilog,,F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_real_rom.v,,W_SELECT_STAGE,,,,,,,,
+F:/4th year 1st term/DIGITAL/Project/FFT_WRAPPER/FFT_WRAPPER/fft32_w_real_rom.v,1746809353,verilog,,,,ROM_W_Real,,,,,,,,

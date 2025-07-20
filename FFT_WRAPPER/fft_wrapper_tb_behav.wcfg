@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fft_wrapper_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fft_wrapper_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="650000001fs"></ZoomEndTime>
+      <Cursor1Time time="426000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="291"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/fft_wrapper_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/inADC" type="array">
+      <obj_property name="ElementShortName">inADC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inADC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/inWordWidth_1" type="array">
+      <obj_property name="ElementShortName">inWordWidth_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inWordWidth_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/real_buf" type="array">
+      <obj_property name="ElementShortName">real_buf[0:31][7:0]</obj_property>
+      <obj_property name="ObjectShortName">real_buf[0:31][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/sample_count" type="array">
+      <obj_property name="ElementShortName">sample_count[5:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_count[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/output_count" type="array">
+      <obj_property name="ElementShortName">output_count[5:0]</obj_property>
+      <obj_property name="ObjectShortName">output_count[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/fft_enable" type="logic">
+      <obj_property name="ElementShortName">fft_enable</obj_property>
+      <obj_property name="ObjectShortName">fft_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/fft_done" type="logic">
+      <obj_property name="ElementShortName">fft_done</obj_property>
+      <obj_property name="ObjectShortName">fft_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/fft_out_real" type="array">
+      <obj_property name="ElementShortName">fft_out_real[0:31][12:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_out_real[0:31][12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/fft_out_imag" type="array">
+      <obj_property name="ElementShortName">fft_out_imag[0:31][12:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_out_imag[0:31][12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/inADC" type="array">
+      <obj_property name="ElementShortName">inADC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inADC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_wrapper_tb/dut/inWordWidth_1" type="array">
+      <obj_property name="ElementShortName">inWordWidth_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inWordWidth_1[31:0]</obj_property>
+   </wvobject>
+</wave_config>

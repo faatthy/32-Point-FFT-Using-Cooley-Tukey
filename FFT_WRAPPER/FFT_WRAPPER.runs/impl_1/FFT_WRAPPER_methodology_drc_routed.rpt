@@ -1,0 +1,56 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 20 19:12:45 2025
+| Host         : DESKTOP-0NF6N2J running 64-bit major release  (build 9200)
+| Command      : report_methodology -file FFT_WRAPPER_methodology_drc_routed.rpt -pb FFT_WRAPPER_methodology_drc_routed.pb -rpx FFT_WRAPPER_methodology_drc_routed.rpx
+| Design       : FFT_WRAPPER
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| SYNTH-13  | Warning  | combinational multiplier      | 3          |
+| TIMING-18 | Warning  | Missing input or output delay | 1          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance fft_inst/butterfly_stage/BF10/fft_complex_mult_unit/k1.
+Related violations: <none>
+
+SYNTH-13#2 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance fft_inst/butterfly_stage/BF4/fft_complex_mult_unit/k1.
+Related violations: <none>
+
+SYNTH-13#3 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance fft_inst/butterfly_stage/BF6/fft_complex_mult_unit/k2.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst_n relative to clock(s) clk
+Related violations: <none>
+
+
